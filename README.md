@@ -22,3 +22,8 @@
 - Simple, user-friendly interface.
 - Secure account management (authentication, data protection).
 - Scalable system for larger datasets.
+
+## 4. Business Analysis Techniques  
+- <B> Use Case Diagram: </B> Modeled interactions between staff and readers.
+- <B> Class Diagram:</B> Defined data entities (Readers, Staff, Books, Publishers, Borrowing Records).
+  ![Class Diagram](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/sodolop.png)
