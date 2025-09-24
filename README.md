@@ -56,7 +56,16 @@ flowchart TD
 
 ## 6. Evaluation & Improvements  
 - Lim itations identified:
--- Missing password recovery feature.
-  Limited UX optimization for readers.
+  -  Missing password recovery feature.
+  -  Limited UX optimization for readers.
+  -  No profile update function for readers.
+- Proposed enhancements:
+  - Add account management features (profile editing, password recovery).
+  - Improve responsive design for better user experience.
+  - Add admin dashboard for monitoring all readers.
+ 
+## 7. Skills Applied  
+Requirements Analysis, UML (Use Case, Class Diagram), Process Modeling, Wireframing, UX Evaluation, Documentation.  
 
-No profile update function for readers.
+## 8. Reflection  
+Through this project, I gained hands-on experience in analyzing business needs, documenting system requirements, and modeling workflows. I also learned how to bridge business requirements with potential technical solutions, a crucial skill set for a Business Analyst Intern.
