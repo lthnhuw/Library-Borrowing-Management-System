@@ -45,13 +45,13 @@ flowchart TD
   I --> L{Due date passed?}
   L -- Yes --> M[Send overdue notification / Penalty]
 ```
-- <b> Wireframes: </b> Designed UI mockups for staff and reader portals.   
+- <b> Wireframes: </b> Designed UI mockups for staff and reader portals.
+![UI](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/trangchu.png)  
 
 ## 5. Key Deliverables  
 - Use Case Diagrams (Registration, Login, Borrow/Return, Management).
 - Class Diagram with entity attributes and relationships.
 - Wireframes for main user interfaces (Login, Search Books, Borrowing History, Management Dashboard).
-   ![UI](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/trangchu.png)
 - Requirement specification document with functional & non-functional requirements.
 
 ## 6. Evaluation & Improvements  
