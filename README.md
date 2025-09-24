@@ -29,13 +29,34 @@
 - <B> Class Diagram:</B> Defined data entities (Readers, Staff, Books, Publishers, Borrowing Records).
   ![Class Diagram](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/sodolop.png)
 - <b> Process Flow: </b> Described borrowing and returning workflows.
-- <b> Wireframes: </b> Designed UI mockups for staff and reader portals.
+```mermaid
+flowchart TD
+  A[Reader: Search book] --> B{Is logged in?}
+  B -- No --> C[Login / Register]
+  C --> D[View book details]
+  B -- Yes --> D
+  D --> E[Request to borrow]
+  E --> F[Staff: Review request]
+  F -- Approve --> G[Notify reader: Pickup time]
+  F -- Reject --> H[Notify reader: Rejected]
+  G --> I[Reader picks up book -> Status: Borrowed]
+  I --> J[Return book at due date]
+  J --> K[Staff: Update record -> Status: Returned]
+  I --> L{Due date passed?}
+  L -- Yes --> M[Send overdue notification / Penalty]
+```
+- <b> Wireframes: </b> Designed UI mockups for staff and reader portals.   
 
-Readers:
-  ![Class Diagram](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/trangchu.png)
- 
 ## 5. Key Deliverables  
 - Use Case Diagrams (Registration, Login, Borrow/Return, Management).
 - Class Diagram with entity attributes and relationships.
 - Wireframes for main user interfaces (Login, Search Books, Borrowing History, Management Dashboard).
+   ![UI](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/trangchu.png)
 - Requirement specification document with functional & non-functional requirements.
+
+## 6. Evaluation & Improvements  
+- Lim itations identified:
+-- Missing password recovery feature.
+  Limited UX optimization for readers.
+
+No profile update function for readers.
