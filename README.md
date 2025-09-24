@@ -25,5 +25,17 @@
 
 ## 4. Business Analysis Techniques  
 - <B> Use Case Diagram: </B> Modeled interactions between staff and readers.
+![Use Case Diagram](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/usecasetq.png)
 - <B> Class Diagram:</B> Defined data entities (Readers, Staff, Books, Publishers, Borrowing Records).
   ![Class Diagram](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/sodolop.png)
+- <b> Process Flow: </b> Described borrowing and returning workflows.
+- <b> Wireframes: </b> Designed UI mockups for staff and reader portals.
+
+Readers:
+  ![Class Diagram](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/trangchu.png)
+ 
+## 5. Key Deliverables  
+- Use Case Diagrams (Registration, Login, Borrow/Return, Management).
+- Class Diagram with entity attributes and relationships.
+- Wireframes for main user interfaces (Login, Search Books, Borrowing History, Management Dashboard).
+- Requirement specification document with functional & non-functional requirements.
