@@ -1,4 +1,5 @@
 # Library-Borrowing-Management-System  
+<b> Link project: </b> [Code](https://github.com/lthnhuw/B2106803_LeThiHuynhNhu_project)
 ## 1. Project Overview  
 - <B> Objective: </B> Automate and streamline the library book borrowing and returning process to improve efficiency and user experience.
 - <B> Problem: </B> Manual management caused delays, lack of transparency, and difficulties in searching/monitoring overdue books.
