@@ -32,19 +32,40 @@
 - <b> Process Flow: </b> Described borrowing and returning workflows.
 ```mermaid
 flowchart TD
-  A[Reader: Search book] --> B{Is logged in?}
+  %% Start of process
+  Start([Start]) --> A[Reader: Search book]
+
+  %% Login check
+  A --> B{Is logged in?}
   B -- No --> C[Login / Register]
   C --> D[View book details]
   B -- Yes --> D
-  D --> E[Request to borrow]
-  E --> F[Staff: Review request]
+
+  %% Borrow request
+  D --> E[Submit borrow request]
+
+  %% Staff review
+  E --> F{Staff: Review request}
   F -- Approve --> G[Notify reader: Pickup time]
-  F -- Reject --> H[Notify reader: Rejected]
-  G --> I[Reader picks up book -> Status: Borrowed]
-  I --> J[Return book at due date]
-  J --> K[Staff: Update record -> Status: Returned]
+  F -- Reject --> H[Notify reader: Request rejected]
+
+  %% Borrowed status
+  G --> I[Reader picks up book → Status: Borrowed]
+
+  %% Due date check
   I --> L{Due date passed?}
-  L -- Yes --> M[Send overdue notification / Penalty]
+  L -- No --> K[Staff: Update record → Status: Returned]
+  L -- Yes --> M[Send overdue notification / Apply penalty]
+
+  %% After penalty
+  M --> N[Reader pays fine]
+  N --> O[Staff: Update record → Status: Returned]
+
+  %% End of process
+  K --> End([End])
+  O --> End
+  H --> End
+
 ```
 - <b> Wireframes: </b> Designed UI mockups for staff and reader portals.
 ![UI](https://github.com/lthnhuw/Library-Borrowing-Management-System/blob/main/trangchu.png)  
